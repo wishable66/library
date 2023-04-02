@@ -1,0 +1,19 @@
+::root {
+  --backgroundColor: rgb(6, 11, 25);
+  --border-color: rgb(255, 255, 255, 0.1);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+img {
+  min-width: 100%;
+  display: block;
+}
+
+body {
+
+}
