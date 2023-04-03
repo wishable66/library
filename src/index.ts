@@ -1,5 +1,6 @@
 interface Book {
   title: string;
+  coverPage: string;
   author: string;
   pages: number;
   read: boolean;
@@ -7,7 +8,13 @@ interface Book {
 
 let myLibrary = [];
 
-function Book(title: string, author: string, pages: number, read: boolean) {
+function Book(
+  title: string,
+  coverPage: string,
+  author: string,
+  pages: number,
+  read: boolean
+) {
   this.title = title;
   this.author = author;
   this.pages = pages;
@@ -24,7 +31,13 @@ function addBookToLibrary(book: Book) {
   myLibrary.push(book);
 }
 
-const thehobbit: Book = new Book('The Hobbit', 'J.R.R Tolken', 295, false);
+const thehobbit: Book = new Book(
+  'The Hobbit',
+  'https://prodimage.images-bn.com/pimages/9780345445605_p0_v1_s550x406.jpg',
+  'J.R.R Tolken',
+  295,
+  false
+);
 
 addBookToLibrary(thehobbit);
 

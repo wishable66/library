@@ -9,15 +9,96 @@
   <script src="index.js" defer></script>
 </head>
 <body>
-  <div class="container">
-    <div class="navbar">
-      <div class="logo">
-        <img src="" alt="">
-        <p>My Library</p>
+  <div class="header">
+    <img src="assets/book-multiple-outline.svg" alt="Book Icon">
+    <h1 class="page-title">My Library</h1>
+  </div>
+
+  <div class="form">
+    <form id="addnewbook">
+      <div class="input">
+        <label for="title">Title</label>
+        <input type="text" name="title" id="title" required>
+      </div>
+      <div class="input">
+        <label for="cover">Coverpage URL</label>
+        <input type="url" name="cover" id="cover" required>
+      </div>
+      <div class="input">
+        <label for="author">Author</label>
+        <input type="text" name="author" id="author" required>
+      </div>
+      <div class="input">
+        <label for="pages"># of pages</label>
+        <input type="number" name="pages" id="pages" min="1" required>
       </div>
 
-      <button>Reset</button>
+      <div class="input">
+        <label for="hasread">Read it before?</label>
+        <input type="checkbox" name="hasread" id="hasread" required>
+      </div>
+
+      <button type="submit">Submit</button>
+      <button type="reset">Clear</button>
+    </form>
+  </div>
+  <div class="library">
+    <div class="book">
+      <h1 class="book-title">The Hobbit</h1>
+      <img class="cover-page" src="https://prodimage.images-bn.com/pimages/9780345445605_p0_v1_s550x406.jpg" alt="Cover Page Image">
+      <p class="book-author">J.R.R Tolken</p>
+      <p class="book-pages">Pages: 295</p>
+      <div class="buttons">
+        <button class="has-read">Read</button>
+        <button class="delete"><img src="assets/trash-can-outline.svg" alt="Delete"></button>
+      </div>
     </div>
+    <div class="book">
+      <h1 class="book-title">The Hobbit</h1>
+      <img class="cover-page" src="https://prodimage.images-bn.com/pimages/9780345445605_p0_v1_s550x406.jpg" alt="Cover Page Image">
+      <p class="book-author">J.R.R Tolken</p>
+      <p class="book-pages">Pages: 295</p>
+      <div class="buttons">
+        <button class="has-read">Read</button>
+        <button class="delete"><img src="assets/trash-can-outline.svg" alt="Delete"></button>
+      </div>
+    </div>
+    <div class="book">
+      <h1 class="book-title">The Hobbit</h1>
+      <img class="cover-page" src="https://prodimage.images-bn.com/pimages/9780345445605_p0_v1_s550x406.jpg" alt="Cover Page Image">
+      <p class="book-author">J.R.R Tolken</p>
+      <p class="book-pages">Pages: 295</p>
+      <div class="buttons">
+        <button class="has-read">Not Read</button>
+        <button class="delete"><img src="assets/trash-can-outline.svg" alt="Delete"></button>
+      </div>
+    </div>
+    <div class="book">
+      <h1 class="book-title">The Hobbit</h1>
+      <img class="cover-page" src="https://prodimage.images-bn.com/pimages/9780345445605_p0_v1_s550x406.jpg" alt="Cover Page Image">
+      <p class="book-author">J.R.R Tolken</p>
+      <p class="book-pages">Pages: 295</p>
+      <div class="buttons">
+        <button class="has-read">Read</button>
+        <button class="delete"><img src="assets/trash-can-outline.svg" alt="Delete"></button>
+      </div>
+    </div>
+    <div class="book">
+      <h1 class="book-title">The Hobbit</h1>
+      <img class="cover-page" src="https://prodimage.images-bn.com/pimages/9780345445605_p0_v1_s550x406.jpg" alt="Cover Page Image">
+      <p class="book-author">J.R.R Tolken</p>
+      <p class="book-pages">Pages: 295</p>
+      <div class="buttons">
+        <button class="has-read">Read</button>
+        <button class="delete"><img src="assets/trash-can-outline.svg" alt="Delete"></button>
+      </div>
+    </div>
+    
+  </div>
+
+
+  <div class="footer">
+    <p>Copyright &copy; wishable 2023</p>
   </div>
 </body>
 </html>

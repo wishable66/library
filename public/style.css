@@ -1,6 +1,9 @@
-::root {
+/* Default Styles */
+
+:root {
   --backgroundColor: rgb(6, 11, 25);
   --border-color: rgb(255, 255, 255, 0.1);
+  --highlight-color: rgb(126, 87, 194, .3);
 }
 
 * {
@@ -10,10 +13,167 @@
 }
 
 img {
-  min-width: 100%;
   display: block;
 }
 
 body {
+  min-height: 100vh;
+  background-color: var(--backgroundColor);
+  display: flex;
+  flex-direction: column;
+}
+
+
+/* Header */
+
+.header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 25px;
+  gap: 1.25rem
+}
+
+.header img {
+  aspect-ratio: 1 / 1;
+  width: 45px;
+  filter: invert(100%) sepia(100%) saturate(0%) hue-rotate(235deg) brightness(104%) contrast(101%);
+}
+
+.header .page-title {
+  color: white;
+  font-size: 3rem;
+}
+
+/* Add new Book Form */
+
+.form {
+  align-self: center;
+  margin-bottom: 50px;
+}
+
+#addnewbook {
+  display: flex;
+  gap: 25px;
+}
+
+form > .input {
+  display: flex;
+  gap: 5px;
+  flex-direction: column;
+}
+
+.input > label {
+  color: white;
+  text-align: center;
+}
+
+.input > input {
+  background-color: var(--backgroundColor);
+  border: 2px solid var(--border-color);
+  padding: 5px;
+  color: white;
+}
+
+.input input:focus {
+  outline: none;
+}
+
+.input input[type="checkbox"] {
 
 }
+
+/* Library */
+
+.library {
+  margin: 0 150px;
+  flex: 1;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-template-rows: max-content;
+  grid-auto-rows: max-content;
+  gap: 1rem;
+}
+
+/* Books */
+
+
+.book {
+  border: 1px solid var(--border-color);
+  display: flex;
+  gap: 1.25rem;
+  flex-direction: column;
+  padding: 15px;
+  border-radius: 15px;
+}
+
+.book-title, .book-author, .book-pages {
+  color: white;
+  text-align: center;
+}
+
+.book > img {
+  width: 175px;
+  padding: 0;
+  margin: 0 auto
+}
+
+.book-author {
+  font-size: 1.55rem;
+}
+
+.book-pages {
+  font-size: 1.3rem;
+}
+
+.buttons {
+  align-self: center;
+  display: flex;
+  gap: 15px;
+}
+
+.has-read {
+  outline: none;
+  background-color: var(--backgroundColor);
+  border: 1px solid var(--border-color);
+  border-radius: 50px;
+  color: white;
+  font-size: .95rem;
+  padding: 15px;
+  width: 150px;
+  justify-self: center;
+}
+
+.has-read:active {
+  background-color: var(--highlight-color);
+}
+
+.delete {
+  background-color: var(--backgroundColor);
+  outline: none;
+  border: none;
+}
+
+.delete > img {
+  aspect-ratio: 1 / 1;
+  width: 25px;
+  filter: invert(24%) sepia(75%) saturate(2088%) hue-rotate(341deg) brightness(105%) contrast(91%);;
+}
+
+/* Footer */ 
+
+
+.footer {
+  margin-top: 2rem;
+  background-color: var(--backgroundColor);
+  padding: 10px;
+}
+
+.footer > p {
+  font-size: 1.25rem;
+  text-align: center;
+  color: var(--highlight-color)
+}
+
+
+
