@@ -80,7 +80,7 @@ form > .input {
 }
 
 .input input[type="checkbox"] {
-
+  margin-top: 5px;
 }
 
 /* Library */
@@ -160,20 +160,7 @@ form > .input {
   filter: invert(24%) sepia(75%) saturate(2088%) hue-rotate(341deg) brightness(105%) contrast(91%);;
 }
 
-/* Footer */ 
 
-
-.footer {
-  margin-top: 2rem;
-  background-color: var(--backgroundColor);
-  padding: 10px;
-}
-
-.footer > p {
-  font-size: 1.25rem;
-  text-align: center;
-  color: var(--highlight-color)
-}
 
 
 
